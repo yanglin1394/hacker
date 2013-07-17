@@ -1,0 +1,1204 @@
+<!--[445,3,37] published at 2013-02-01 11:14:32 from #187 by 8477-->
+<html><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+<title>GitLab使用介绍.pdf_免费高速下载_新浪爱问共享资料</title>
+
+<meta name="keywords" content="IT资料,源代码,免费下载">
+
+<meta name="description" content="GitLab使用介绍.pdf,GitLab是中小型软件开发管理源代码版本的前沿利器。搭建好GitLab后如何让开发人员迅速上手使用这套工具，本">
+
+<meta name="adkey" content="+[共享资料|IT资料:20|源代码:10]">
+
+<link rel="canonical" href="http://ishare.iask.sina.com.cn/f/35504042.html"/> 
+
+<link href="/css/g.css?v2.0" rel="stylesheet" type="text/css">
+<!--
+<link href="http://i3.sinaimg.cn/pfp/ishare/css/iask_vd20120620-17.css" rel="stylesheet" type="text/css">
+-->
+<link href="http://i2.sinaimg.cn/pfp/ishare/Z1/css/iask_vd20121009.css" rel="stylesheet" type="text/css">
+
+<script src="http://i0.sinaimg.cn/pfp/i/z4/js/jquery-1.4.2.min.js" language="JavaScript" type="text/javascript"></script>
+
+<script src="/js/dialog.js" language="JavaScript" type="text/javascript"></script>
+
+<script src="/js/zhishi_js.js?v=1.8.1" language="JavaScript" type="text/javascript"></script>
+
+<script src="/js/request.js" language="JavaScript" type="text/javascript"></script>
+
+<script language="JavaScript" src="/adm/class.js"></script>
+
+<script language="JavaScript" src="/js/show_class.js?21"></script>
+
+<script language="JavaScript" src="/js/savevdisk.js?v=1.2"></script>
+
+<script language="JavaScript" src="/js/lcookie.js"></script>
+<script language="javascript"> 
+
+function addCookie(objName, objValue, objHours){//添加cookie
+
+	var str = objName + "=" + escape(objValue);
+
+		if (objHours > 0) {//为0时不设定过期时间，浏览器关闭时cookie自动消失
+
+			var date = new Date();
+
+				var ms = objHours * 3600 * 1000;
+
+				date.setTime(date.getTime() + ms);
+
+				str += "; expires=" + date.toGMTString();
+
+		}
+
+	//alert(str);
+	document.cookie = str;
+	// alert("添加cookie成功");
+}
+
+var lcookie = new lcookie();
+function set_download_cookie(fileid)
+{
+	        lcookie.setCookie('ishare_ifdown_'+fileid, '1', -1, '', '');
+}
+</script>
+<script type="text/javascript" src="http://ask.weibo.com/js/widget/askwidget.js" charset="utf-8"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+</head>
+
+<body topmargin="0" leftmargin="0">
+<center>
+
+<style type="text/css">
+
+.ts928_a{position:relative; width:1000px;}
+
+.ts928_b{position:absolute; right:80px; top:25px; background:#feffe2; border:1px solid #f8f1a5; line-height:18px; width:220px; text-align:left; font-size:12px;}
+
+.ts928_c{float:left; width:168px; margin:5px 0px 5px 15px; display:inline}
+
+*html .ts928_c{ margin:5px 0px 5px 15px;}
+
+.ts928_d{float:right; margin:5px 10px 0px 0px; display:inline}
+
+.ts928_d a{width:9px; height:9px; background:url(http://i0.sinaimg.cn/pfp/iask/images/zhishi/close_detail.gif) no-repeat; line-height:0px; font-size:0px; display:block;}
+.newly_ask{width:200px; overflow:hidden; margin-bottom:15px;}
+.newly_title{ height:22px; border:1px solid #d7dcd2; background:#f2f6ed; line-height:22px; font-size:12px; color:#333; text-align:center;}
+.newly_con{ padding:11px 7px 7px 7px; background:#fff;}
+.newly_li{ background:url(http://www.sinaimg.cn/pfp/w_ask/t1/images/libj.png) no-repeat 5px center; height:25px; border-bottom:1px solid #f7f7f7; line-height:25px;}
+.newly_li a{ color:#00007f; text-decoration:none; margin-left:15px;}
+.newly_li a:hover{ color:#00007f; text-decoration:underline;}
+.newly_img{margin:20px 0 20px; width:190px; height:61px;}
+.newly_img a{ display:block; outline:none;}
+.newly_img img{ border:none;}
+</style>
+
+<div class="ts928_a">
+
+<table border="0" width="1000px" cellpadding="0" cellspacing="0" align="center" class="topline">
+
+
+	<tr>
+
+		<td width="220" height="65" align="right"><a href="/"><img src="http://i2.sinaimg.cn/pfp/ishare/logo_gx.gif" border="0" width="204" height="50" alt="共享资料" class="mt15"></a></td>
+
+		<td width="5"></td>
+
+		<td valign="top">
+
+		<table border="0" width="310" align="right" cellpadding="0" cellspacing="0" class="f12" background="http://i2.sinaimg.cn/pfp/ask/images/zhishi/bg_top_line_t.gif">
+
+			<tr>
+
+				<td width="28" height="22"><img src="http://i0.sinaimg.cn/pfp/ask/images/zhishi/top_xsj.gif" border="0" width="32" height="22"></td>
+
+				<td align="center"><a href="javascript:void(0);" onClick="jscript:window.external.AddFavorite(document.location.href,document.title);" class="toplink">收藏本站</a>　<a href="http://ishare.iask.sina.com.cn/" class="toplink">共享资料首页</a>　<a href="http://www.sina.com.cn/" target="_blank" class="toplink">新浪首页</a></td>
+
+			</tr>
+
+		</table><br clear="all">
+
+		<table border="0" cellpadding="0" cellspacing="0">
+
+		<form name="gxForm" method="get" onSubmit="ckformat(this);return iask_submit(this,'ishare');">
+
+			<tr>
+
+				<td class="ar" valign="top" nowrap>
+
+				<input type=text name=key id=is size=42 class=f18 value="" onClick="ckwords(this);" style="border:1px solid #CDE8A9;height:26px;">
+
+				<input type="submit" value=" 搜 索 " style="width:60px;height:30px;">
+
+				<input type="hidden" name="from" value="file">
+
+	 			</td>
+
+			</tr>
+
+			<tr class="f12 c6"><td height="22"><input type="hidden" name="format" id="f8" value=""><input type="checkbox" id="f0" name="format" value="" checked onClick="ckformatclick(this)">全部 <input type="checkbox" id="f1" name="format" value="txt" onClick="ckformatclick(this)">TXT <input type="checkbox" id="f2" name="format" value="doc" onClick="ckformatclick(this)">DOC <input type="checkbox" id="f3" name="format" value="pdf" onClick="ckformatclick(this)">PDF <input type="checkbox" id="f4" name="format" value="ppt" onClick="ckformatclick(this)">PPT <input type="checkbox" id="f5" name="format" value="htm" onClick="ckformatclick(this)">CHM <input type="checkbox" id="f6" name="format" value="rar" onClick="ckformatclick(this)">RAR <input type="checkbox" id="f7" name="format" value="exe" onClick="ckformatclick(this)">EXE</td></tr>
+
+		</form>
+
+		</table>
+
+		</td>
+
+	</tr>
+
+	<tr><td height="7"></td></tr>
+
+</table>
+
+</center>
+
+<center>
+
+<table border="0" width="1000px" cellpadding="0" cellspacing="0" class="f13 cc" style="margin-bottom:15px;" background="http://i0.sinaimg.cn/pfp/ask/images/zhishi/bg_nav_30.gif">
+
+	<tr valign="bottom" align="center">
+
+		<td width="20" height="23"></td>
+
+		<td width="3">|</td>
+
+		<td width="6%" nowrap><a href="/" class="nav">首页</a></td>
+
+		<td width="3">|</td>
+
+		<td width="7%" nowrap><a href="/cate/" class="nav">资料分类</a></td>
+
+		<td width="3">|</td>
+
+		<td width="7%" nowrap><a href="/random/" class="nav">随便看看</a></td>
+
+		<td width="3">|</td>
+
+		<td width="7%" nowrap><a href="/toplist/" class="nav">用户榜</a></td>
+
+		<td width="3">|</td>
+
+		<td width="6%" nowrap><a href="http://iask.com/more.html" class="nav">更多&raquo;</a></td>
+
+		<td align="right"><a href="http://iask.sina.com.cn/u/ish"><img src="http://i3.sinaimg.cn/pfp/ask/images/zhishi/grzx-2.gif" border="0" width="78" height="19"></a></td>
+
+		<td width="15"></td>
+
+	</tr>
+
+	<tr>
+
+		<td height="7" colspan="4"></td>
+
+		<td align="center"></td>
+
+		<td></td>
+
+	</tr>
+
+</table>
+
+</div>
+
+</center>
+
+<div id="div_cover" name="div_cover"  class="div_cover" style="display:none"></div>
+
+<center>
+
+<iframe name="iframe_fileinfo"  id="iframe_fileinfo" style="display:none;"></iframe>
+
+<form id="form_fileinfo" name="form_fileinfo" target="iframe_fileinfo" style="margin:0;" enctype="multipart/form-data" method="post">
+
+<div name="delmess" id="delmess"  class="main1" style="display:none; position:absolute; left:320px; top:100px;height:419px; width:520px; background:#fff;"> 
+
+	<div id="headerbg" class="headerbg" >
+
+	<h2>编辑资料</h2>
+
+	<span><a href="javascript:h('delmess');h('div_cover');void(0);"><img src="http://i3.sinaimg.cn/pfp/i/z3/close1.gif" alt="关闭" onMouseMove="imgchange(this,'http://i0.sinaimg.cn/pfp/i/z3/close2.gif')" onMouseOut="imgchange(this,'http://i3.sinaimg.cn/pfp/i/z3/close1.gif')" /></a></span>
+
+	<div class="c"></div>
+
+</div>
+
+<div id="pop_cont1" class="pop_cont1" style="height:372px;">
+
+	 	<div class="tipsBg"  id="errortipdiv" style="display:none"></div>
+
+	<div class="area" style="padding:15px 0px 8px 0px;">
+
+		<p style="text-align:center;" id="ishare_mess">
+
+		<div style="padding-left:15px;"><span style="margin-right:15px; font-size:14px;">名称</span><input type="text" name="file_title" id="file_des" value="GitLab使用介绍.pdf" style="width:430px;height:23px;"/></div><div style="margin-top:10px; padding-left:15px;"><span style="margin:0px 15px 0px 0px; font-size:14px;">说明</span><textarea type="text" name="file_des" id="file_des" style="width:430px;height:90px;"/>GitLab是中小型软件开发管理源代码版本的前沿利器。搭建好GitLab后如何让开发人员迅速上手使用这套工具，本介绍以详实的截图和说明一步步带你学会使用Git和GitLab</textarea></div>
+
+		</p>
+
+		<div class="c"></div>
+
+	</div>
+
+        <div class="area" style="padding:0px 0px 0px 15px;">
+
+		<p style="line-height:22px;" id="ishare_mess"><span style="margin-right:15px; font-size:14px;">积分</span><input type="radio" value="0" name="file_price" id="file_price" checked="checked"/>0分
+
+<input type="radio" value="1" name="file_price" id="file_price"/>1分
+
+<input type="radio" value="2" name="file_price" id="file_price"/>2分
+
+<input type="radio" value="5" name="file_price" id="file_price"/>5分
+
+		</p>
+
+		<div class="c"></div>
+
+	</div>
+
+ <div class="lightbox2d clx" style="padding-left:15px; margin-top:10px;"><span style="float:left; font-size:14px; margin-right:15px;">分类</span><input type="hidden" value="0" id="classidnum" name="classidnum">
+
+      <select onChange="searchlist2( this.form );" class="lightbox2e" size="9" id="select1" name="select1"><option></select>
+
+      <span class="lightbox2f"></span>
+
+       <select onChange="searchlist3(this.form);" class="lightbox2e" size="9" id="select2" name="select2"><option></select>
+
+      <span class="lightbox2f"></span>
+
+       <select class="lightbox2e" size="9" id="select3" name="select3"><option></select>
+
+ </div>
+
+        <div id="butt_area" class="butt_area">
+
+	<div  style="padding-top:7px;">
+
+		<input type="hidden" name="file_uid" id="file_uid" value="1642560467">
+
+		<input type="hidden" name="file_id" id="file_id" value="35504042">
+
+		<input type="hidden" name="hiddenfile_title" id="hiddenfile_title" value="GitLab使用介绍.pdf">
+
+		<input type="hidden" name="hiddenfile_desc" id="hiddenfile_desc" value="GitLab是中小型软件开发管理源代码版本的前沿利器。搭建好GitLab后如何让开发人员迅速上手使用这套工具，本介绍以详实的截图和说明一步步带你学会使用Git和GitLab">
+
+		<input type="hidden" name="hiddenfile_classid" id="hiddenfile_classid" value="1908">
+
+		<input type="hidden" name="hiddenfile_price" id="hiddenfile_price" value="0">
+
+		<input type="button" value="确 定"   name="upt_fileinfo" class="buttBg2" id="upt_fileinfo" onClick="save_fileinfo();void(0);"/>
+
+		&nbsp;
+
+		<input type="button" value="取 消" name="" class="buttBg1" onClick="h('delmess');h('div_cover');" onMouseOver="this.className = 'buttBg2';" onMouseOut="this.className = 'buttBg1';"/>
+
+	</div></div>
+
+        </div>
+
+		</div>
+
+	</div>
+
+</form>
+
+</center>
+
+<center>
+
+<div name="div_succ_modi" id="div_succ_modi" class="main1" style="display:none;position:absolute; left:320px; top:100px;height:112px;">
+
+      <div id="headerbg" class="headerbg" >
+
+      <h2>共享资料提示</h2>
+
+      <span><a href="javascript:h('div_succ_modi');h('div_cover');void(0);"><img src="http://i3.sinaimg.cn/pfp/i/z3/close1.gif" alt="关闭" onMouseMove="imgchange(this,'http://i0.sinaimg.cn/pfp/i/z3/close2.gif')" onMouseOut="imgchange(this,'http://i3.sinaimg.cn/pfp/i/z3/close1.gif')" /></a></span>
+
+      <div class="c"></div>
+
+</div>
+
+<div id="pop_cont1" class="pop_cont1">
+
+<div class="area">
+
+              <img src="http://i2.sinaimg.cn/pfp/i/z3/ok.gif">
+
+              <p style="line-height:32px;"> 修改成功！
+
+              </p>
+
+              <div class="c"></div>
+
+      </div>
+
+      <div id="butt_area" class="butt_area">
+
+      <div  style="padding-top:4px;">
+
+              <input type="hidden" name="file_uid" id="file_uid" value="1642560467">
+
+              <input type="hidden" name="file_id" id="file_id" value="35504042">
+
+              <input type="button" value="确 定"   name="but_succmodi" class="buttBg2" id="but_succmodi"  onclick="hide_succ_modi()"/>
+
+      </div>
+
+      </div>
+
+</div>
+
+</div>
+
+</center>
+
+<div class="wrap_wrap">
+
+<div class="wrap">
+
+<div class="wrap_left">
+
+<div class="f12 c6 st"> <a href="/cate/" class="a05">资料分类</a> 
+
+ 
+
+	&gt; <a href="/c/1822.html" class="a05">IT资料</a>
+
+ 
+
+	&gt; <a href="/c/1908.html" class="a05">源代码</a>
+
+
+</div>
+
+<div class="lh30 f14 c3 mt15" style="background-color:#f3f3f3;">&nbsp;<h1 class="f14" style="display:inline;">GitLab使用介绍.pdf</h1></div>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+
+	<tr><td height="15"></td></tr>
+
+	<tr valign="top">
+
+		<td width="400" class="f12">
+
+			<div class="bb1pb10 f14">
+
+			<table border="0" width="100%">
+
+				<tr valign="top">
+
+					<td width="100"><img src="http://i1.sinaimg.cn/pfp/ishare/icon_pdf.gif" border="0"></td>
+
+					<td class="lh15"><b>说明：</b>
+
+
+<br>
+
+<p style="margin:0">GitLab是中小型软件开发管理源代码版本的前沿利器。搭建好GitLab后如何让开发人员迅速上手使用这套工具，本介绍以详实的截图和说明一步步带你学会使用Git和GitLab</p>
+
+</td></tr></table>
+
+</div>
+
+<div class="p5" align="right"><a href="#" class="a05" target="_blank" onClick="openWindow('/browse/mycollect.php?fileid=35504042&uid=1642560467', '450', '200', '收藏'); return false;"><img src="http://i0.sinaimg.cn/pfp/ishare/gxsc.gif" border="0" width="14" height="14" hspace="3" align="absmiddle">收藏此资料</a> <a href="/315_4share.php?fileid=35504042&uid=1642560467" class="a05" target="_blank" onClick="openWindow('/315_4share.php?fileid=35504042&uid=1642560467', '500', '350', '举报'); return false;"><img src="http://i1.sinaimg.cn/pfp/ishare/gx_jb.gif" border="0" width="14" height="14" hspace="3" align="absmiddle">举报</a></div>
+
+					<div >
+
+<iframe name="iframe_data" style="display:none;"></iframe>
+
+<form name="downLoad" id="downLoad" method="post" action="/download.php?fileid=35504042" target="iframe_data" style="margin:0;">
+
+	<!--
+	<table id="download_file" border="0" cellpadding="0" cellspacing="0"  style="background:url(http://i0.sinaimg.cn/pfp/ishare/gx_ljxz.gif) no-repeat; float:left;" class="hand" title="点击即可下载此资料，暂不支持迅雷" onclick="javascript:downishare('0');ab.addStat(1);">
+
+	<tr>
+
+	<td width="184" height="37" align="right"><span class="f10">0分<br>1.05MB</span></td>
+
+	<td width="7"></td>
+
+	</form>
+
+	</tr></table>
+	-->
+	<!--保存到微盘按钮 start-->
+	<!--<div id="save_to_vidsk" class="save_vd_btn" fileid="35504042" username="">保存到微盘</div>-->
+	<!--保存到微盘按钮 end-->
+	<!--保存到微盘按钮 start-->
+	<div class="save_vd_btn clearfix">
+		<!--<div class="download_btn_box"><a id="download_file" href="javascript:downishare('0');" class="download_btn">立即下载</a><p>0分<span>1.05MB</span></p></div>-->
+		<div class="download_btn_box"><a id="download_file" onclick="set_download_cookie('35504042');" href="/download/explain.php?fileid=35504042" class="download_btn" target="_blank">立即下载</a><p>0分<span>1.05MB</span></p></div>
+	    <div class="save_btn_box" style="display:block;"><a id="save_to_vidsk" href="javascript:void(0);" class="save_btn" fileid="35504042" username="">保存到微盘</a></div>
+	</div>
+	<!--保存到微盘按钮 end-->
+	<!--为资料评星 start-->
+	<table cellspacing="0" cellpadding="0" border="0" style="clear:both;font-size:12px;float:left">
+	<tbody>
+	<tr valign="bottom">
+	<td>&nbsp;</td>
+	<td height="10" style="color:#079124;" id="mt"></td>
+	</tr>
+	<tr>
+	<td align="right" width="80" valign="bottom" nowrap="nowrap"><b id="pxts" class="c3">为资料评星：</b></td>
+	<td width="109" id="ss"><img border="0" width="16" height="16" src="http://i1.sinaimg.cn/pfp/ishare/gx_hxx2.gif" onClick="mc(1)" onMouseOut="mf()" onMouseOver="mn(1)" class="hand" id="img1"><img border="0" width="16" height="16" src="http://i1.sinaimg.cn/pfp/ishare/gx_hxx2.gif" onClick="mc(2)" onMouseOut="mf()" onMouseOver="mn(2)" class="hand" id="img2"><img border="0" width="16" height="16" src="http://i1.sinaimg.cn/pfp/ishare/gx_hxx2.gif" onClick="mc(3)" onMouseOut="mf()" onMouseOver="mn(3)" class="hand" id="img3"><img border="0" width="16" height="16" src="http://i1.sinaimg.cn/pfp/ishare/gx_hxx2.gif" onClick="mc(4)" onMouseOut="mf()" onMouseOver="mn(4)" class="hand" id="img4"><img border="0" width="16" height="16" src="http://i1.sinaimg.cn/pfp/ishare/gx_hxx2.gif" onClick="mc(5)" onMouseOut="mf()" onMouseOver="mn(5)" class="hand" id="img5"></td>
+	</tr>
+	</tbody>
+	</table>
+	<table cellspacing="0" cellpadding="0" border="0" style="float:left;font-size:12px">
+	<tbody>
+	<tr>
+	<td style="width:150px;height: 11px;padding-left:10px;cursor:default;color:00007f;"></td>
+	</tr>
+	<tr>
+	<td style="width:150px;height: 18px;padding-left:10px;cursor:default;color:00007f;"><a target="_blank" class="a05" href="http://ishare.sina.cn/dintro.php?id=35504042"><img alt="用手机下载" style="border:none;" src="http://i2.sinaimg.cn/pfp/i/z3/phone.gif">用手机下载</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" class="a05" href="/help/faq.html">常见问题</a></td>
+	</tr>
+	</tbody>
+	</table>
+	<!--为资料评星 end-->
+	</form>
+
+<script src="/js/file_start.js?v3.0" language="JavaScript" type="text/javascript"></script>
+
+<script type="text/javascript"> 
+
+createdownimg('0');
+
+var xguid=1642560467;
+
+var mfileid=35504042;
+
+var mclassid=1908;
+
+var mcommentnum=0;
+
+function flushimg(){
+
+var rand=	Math.round((Math.random()) * 100000000);
+
+document.getElementById('rcheckcode').src='/browse/regcreatepng.php?r='+rand;
+
+}
+
+</script>
+
+					</div>
+
+				</td>
+
+				<td width="20">&nbsp;</td>
+
+				<td>
+
+					<table width="100%" cellpadding="0" cellspacing="0" class="f12 c9 lh15 mb10">
+
+						<tr>
+
+							<td width="175">资料星级：<img src="http://i1.sinaimg.cn/pfp/ishare/gx_hxx1.gif" width="16" height="16" align="absmiddle"><img src="http://i2.sinaimg.cn/pfp/ishare/gx_hxx1.gif" width="16" height="16" align="absmiddle"><img src="http://i3.sinaimg.cn/pfp/ishare/gx_hxx1.gif" width="16" height="16" align="absmiddle"><img src="http://i0.sinaimg.cn/pfp/ishare/gx_hxx2.gif" width="16" height="16" align="absmiddle"><img src="http://i1.sinaimg.cn/pfp/ishare/gx_hxx2.gif" width="16" height="16" align="absmiddle"></td>
+
+							<td>资料格式：PDF</td>
+
+						</tr>
+
+						<tr>
+
+							<td>上 传 者：<a href="http://iask.sina.com.cn/u/1642560467/ish" class="a05 lh15 mb10" target="_blank" title="点击查看Ta的所有资料">tattoo</a></td>
+
+							<td>下载次数：473</td>
+
+						</tr>
+
+						<tr>
+
+							<td colspan="2">上传时间：2013-01-17 16:29:41</td>
+
+						</tr>
+
+					</table>
+
+					<div class="f12" style="position:relative;"><a href="#" onClick="openWindow('/browse/sendfriendmail.php?fileid=35504042&title=GitLab%CA%B9%D3%C3%BD%E9%C9%DC.pdf ', '470', '350', '发送给好友');return false;" class="c6nul"><img src="http://i2.sinaimg.cn/pfp/ishare/gx_fsghy.gif" border="0" width="14" height="10" hspace="3" align="absmiddle"><b>Email给好友</b></a>
+
+<div id="tjghy" style="display:none"></div>
+
+<div id="tjdwz" style="position: absolute; top:-3px; left:110px;">
+
+<b>分享到:</b>
+
+<a href="javascript:void((function(s,d,e,t,z,r,l,p,c){var f='http://v.t.sina.com.cn/share/share.php?appkey=2449040330&',u=z||d.location,p=['url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else a();})(screen,document,encodeURIComponent,'GitLab使用介绍.pdf - 共享资料下载','http://ishare.iask.sina.com.cn/f/35504042.html?w=','','','',''));" class="pl5" title="分享到微博"><img src="http://i2.sinaimg.cn/pfp/ishare/sina.gif" border="0"></a>
+
+<a href="#" onClick="javascript:window.open('http://www.douban.com/recommend/?title='+encodeURIComponent('GitLab使用介绍.pdf - 共享资料下载')+'&url=http://ishare.iask.sina.com.cn/f/35504042.html?w=','newwindow', 'height=350,width=450,top=200,left=300')" class="pl5" title="推荐到豆瓣"><img src="http://i0.sinaimg.cn/pfp/ishare/douban.gif" border="0"></a>
+
+<a href="http://www.kaixin001.com/~repaste/repaste.php?rtitle=GitLab使用介绍.pdf - 共享资料下载&rurl=http://ishare.iask.sina.com.cn/f/35504042.html?w=&&rcontent=http://ishare.iask.sina.com.cn/f/35504042.html?w=" class="pl5" target="_blank" title="转帖到开心网"><img src="http://i3.sinaimg.cn/pfp/ishare/kaixin.gif" border="0"></a>
+
+<a href="#" onClick="javascript:window.open('http://share.renren.com/share/buttonshare.do?title='+encodeURIComponent('GitLab使用介绍.pdf - 共享资料下载')+'&link=http://ishare.iask.sina.com.cn/f/35504042.html?w=','newwindow', 'height=430,width=500,top=160,left=300')" class="pl5" title="分享到人人网"><img src="http://i1.sinaimg.cn/pfp/ishare/renren.gif" border="0"></a>
+
+</div>
+
+<!-- share begin -->
+
+<div class="f12" style="position:relative;padding-top:10px;">
+
+<table cellpadding="0" cellspacing="0" class="sh">
+
+	<tr>
+
+	<td align="center" colspan="2"><b>分享链接</b>(分享可获得<a href="http://ishare.iask.sina.com.cn/help/jfgz.html" target="_blank" class="a05">积分奖励</a>)</td>
+
+	</tr>
+
+	<tr>
+
+	<td>QQ/MSN:</td><td><input type="text" value="推荐:GitLab使用介绍.pdf( http://ishare.iask.sina.com.cn/f/35504042.html?w= )" onMouseOver="this.select();" readOnly></td>
+
+	</tr>
+
+	<tr>
+
+	<td>论坛UBB:</td><td><input type="text" value="[url=http://ishare.iask.sina.com.cn/f/35504042.html?w=]GitLab使用介绍.pdf[/url]" onMouseOver="this.select();" readOnly></td>
+
+	</tr>	
+
+	<tr>
+
+	<td>普通html:</td><td><input type="text" value="<a href='http://ishare.iask.sina.com.cn/f/35504042.html?w=' target='_blank'>GitLab使用介绍.pdf</a>" onMouseOver="this.select();" readOnly></td>
+
+	</tr>
+
+</table></div>
+
+<!-- share end -->
+
+</div>
+
+</td></tr></table>
+
+<!-- like begin -->
+
+
+<!-- like end -->
+
+<!-- 713*65广告位-->
+
+<div style="width:728px; height:95px;  margin:10px auto; overflow:hidden;">
+
+<script>
+try{document.domain='sina.com'}catch(e){};(function(b, c) {
+    function g() {
+        var a = b.getElementById("cont-tanx-a-" + h);
+        if (5 < i && ("undefined" === typeof c.tanxssp_show)) {
+            try {
+                a.removeChild(b.getElementById("tanx-a-" + h))
+            } catch (d) {}
+            a.innerHTML = j
+        } else "undefined" !== typeof c.tanx_ssp_onload || (i++, setTimeout(g, 100))
+    }
+    var a = b.createElement("script"),
+        d = b.getElementsByTagName("head")[0],
+        j = "\x3Ca href\x3D\x27http\x3A\x2F\x2Fredirect.simba.taobao.com\x2Frd\x3Fc\x3Dun\x26w\x3Dchannel\x26f\x3Dhttp\x253A\x252F\x252Fwww.taobao.com\x252Fgo\x252Fact\x252Fmmbd\x252Fpdnew.php\x253Fpid\x253Dmm\x5F15890324\x5F2192376\x5F9086917\x2526unid\x253D\x26k\x3D30375390a8b21737\x26p\x3Dmm\x5F15890324\x5F2192376\x5F9086917\x27 target\x3D\x5Fblank\x3E\x3Cimg src\x3D\x27http\x3A\x2F\x2Fd1.sina.com.cn\x2Flitong\x2Fduanran\x2F728x90.jpg\x27 border\x3D0 \x2F\x3E\x3C\x2Fa\x3E",
+        i = 0,
+        h = "mm_15890324_2192376_9086917";
+    b.write("<span id='cont-tanx-a-" + h + "'><a style='display:none;' id='tanx-a-" + h + "'></a></span>");
+    c.tanxssp_show || (a.src = "http://p.tanx.com/ex?i=" + h, d.insertBefore(a, d.firstChild));
+    setTimeout(g, 3E3)
+})(document, window);
+</script>
+
+<script src="http://a.alimama.cn/inf.js" type="text/javascript"></script>
+</div>
+
+<!-- 713*65广告位-->
+
+<!-- related begin -->
+
+<div style="margin-top:10px;width:100%;">
+
+<div id="isharn"></div>
+
+</div>
+
+<!-- related end -->
+
+<!-- down begin -->
+
+
+<!-- down end -->
+
+<!-- zhitouads -->
+
+<style type="text/css">
+
+#zhitouads1{border:1px solid #ccc; margin-top:10px; padding:10px 0px; width:713px;display:none;}
+
+#zhitouads1 .advitem{margin:0px; padding:0px; width:222px; height:40px;border-right:1px dashed #ccc; padding-left:11px; font-size:12px; display:block; float:left;}
+
+#zhitouads1 .advitem .advline{line-height:20px; height:20px;overflow:hidden;margin:0px; padding:0px; display:block; width:216px;}
+
+#zhitouads1 .union_ad{border:0px;}
+
+#zhitouads1 .union_ad1{color:#333;text-decoration:none;}
+
+</style>
+
+<div id="zhitouads1">
+
+     <span class="advitem" id="advitem" name="advitem"><span class="advline"><a href="" target="_blank"></a></span><span class="advline"><a href="" class="union_ad1" target="_blank"></a></span></span>	
+
+     <span class="advitem" id="advitem" name="advitem"><span class="advline"><a href="" target="_blank"></a></span><span class="advline"><a href="" class="union_ad1" target="_blank"></a></span></span>	
+
+     <span class="advitem union_ad" id="advitem" name="advitem"><span class="advline"><a href="" target="_blank"></a></span><span class="advline"><a href="" class="union_ad1" target="_blank"></a></span></span>	
+
+     <br clear="all">
+
+</div>
+
+<!-- zhitouads -->
+
+<script src="/js/file_comment.js" language="JavaScript" type="text/javascript"></script>
+
+		<table border="0" width="100%" cellpadding="0" cellspacing="0" class="mt15">
+
+			<tr valign="bottom">
+
+				<td width="21" height="20"><a href=# onClick="open_close(fl_gd,fl_imgg)"><img src="http://i0.sinaimg.cn/pfp/ishare/gx_jh1.gif" id="fl_imgg" border="0"></a></td>
+
+				<td class="be4"><div class="lb_tt_open">
+
+				<table border="0" align="center" width="670" cellpadding="0" cellspacing="0" class="f12">
+
+				<table border="0" align="center" width="670" cellpadding="0" cellspacing="0" class="f12">
+
+					<tr><td height="18">相关评论 <span id="comment_num">0</span> 条&nbsp;&nbsp;&nbsp;&nbsp;</td><td align="right"><a href="javascript:fetchObject('fbpl').style.display='';void(0);fetchObject('cid').focus();flushimg();">发表评论</a> <img src="http://i1.sinaimg.cn/pfp/ishare/gx_fbpl.gif" border="0" width="11" height="12" align="absmiddle"></td></tr>
+
+				</table>
+
+				</div></td>
+
+			</tr>
+
+		</table>
+
+		<div id="fl_gd" class="r_tbl2">
+
+		<div id="fbpl" style="border-bottom:1px solid #d3d3d3; display:none;">
+
+		<table class="f12" border="0" cellpadding="0" cellspacing="0" align="center">
+
+<form action="javascript:setHtmlByComment('/browse/add_comment_xml.php');" method="post" id="edit" name="edit" target="_top" onsubmit="return checkcommentform(this);"> 
+
+	<input type="hidden" name="title" value="GitLab使用介绍.pdf ">
+
+			<tr><td height="15"></td></tr>
+
+			<tr>
+
+				<td></td>
+
+				<td class="c9" align="right" valign="buttom">为维护健康文明的社区氛围,请不要发表具有谩骂,诽谤,广告,宣传等内容的评论。</td>
+
+			</tr>
+
+			<tr valign="top">
+
+				<td align="right" width="80"><b class="f14">发表评论：</b></td>
+
+				<td width="430"><textarea id="cid" name="comment" cols="80" rows="7" class="w100" onKeyDown="zsxz(this,syzs,200)" onKeyUp="zsxz(this,syzs,200)"></textarea></td>
+
+			</tr>
+
+			<tr>
+
+				<td></td>
+
+				<td nowrap="nowrap" valign="top" align="right"><font class="lh15 cc">可输入<input size="3" readonly="readonly" id="syzs" class="zishuc" value="200" type="text">个汉字</font></td>
+
+			</tr>
+
+<tr>
+
+				<td>请输入验证码:</td>
+
+				<td><input type="text" name="checkcode" style="border:#a5acb2 solid 1px;width:80px;height:24px;" align="top">
+
+                <a href="javascript:flushimg();"><img id="rcheckcode" width="90" height="24" title="验证码" align="top" border="0"></a>　验证码错误时,请<a href="javascript:flushimg();">点此刷新一下</a>,输入新验证码.
+
+		</td></tr>
+
+			<tr>
+
+				<td></td>
+
+				<td class="pt15"><input type="submit" value="发表评论">　<input value="  取 消  " onClick="javascript:fetchObject('fbpl').style.display='none';" type="button"></td>
+
+			</tr>
+
+			<tr><td height="15"></td></tr>
+
+		</table>
+
+		</form>
+
+		</div>
+
+<span id="comment_insert"></span>
+
+
+		</div>
+
+		</div>
+
+		<div class="wrap_right">
+
+		<div class="f12" style="width:200px; padding:8px; background-color:#F7F7F7;">
+
+		<script src="/js/loginsso.js" language="javascript" type="text/javascript" ></script>
+<iframe name="iframe_data" style="display:none;"></iframe>
+<table border="0" width="175" cellpadding="0" cellspacing="0" style="margin-bottom:7px;" align="center">
+<form name="login" id="login" method="post" onSubmit="return checkjsLogin();" target="iframe_data">
+<input type="hidden" name="U_Url" value="$showurl">
+	<tr>
+		<td height="28" background="http://i2.sinaimg.cn/pfp/ask/images/zhishi/login_bg.gif" align="center" style="padding-top:8px;"><b class="f12">欢迎登录共享资料</b></td>
+	</tr>
+	<tr>
+		<td align="center" bgcolor="#f5f5f5" class="r_tbl f12">
+		<table border="0" width="93%" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+			<tr><td height="5"></td></tr>
+			<tr>
+				<td width="55" height="18" align="right">会员名：</td>
+				<td width="104" align="center"><input type="text" name="U_Loginname" maxlength="64" size="15" style="color:#999;width:100px; height:20px;" value="注册邮箱/会员名" onClick="if(this.value=='注册邮箱/会员名') this.value=''"></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr><td height="8"></td></tr>
+			<tr>
+				<td height="18" align="right">密　码：</td>
+				<td align="center"><input type="password" name="U_Pass" maxlength="16" size="15" style="color:#999;width:100px; height:20px;"></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr><td height="5"></td></tr>
+			<tr>
+				<td colspan="3" align="center"><input type="checkbox" name="U_login" value="1">记住我的登录状态</td>
+			</tr>
+			<tr><td height="5"></td></tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td colspan="2"><TABLE>
+				<TR>
+					<TD><input type="image" src="http://i1.sinaimg.cn/pfp/ask/images/zhishi/login_btn_green.gif" border="0"></TD>
+					<TD><span><a href="http://iask.sina.com.cn/register/get_pass.html" target="_blank" class="a05">忘记密码</a></span></TD>
+				</TR>
+				</TABLE> </td>
+			</tr>
+			<tr><td height="4"></td></tr>
+			<tr><td height="1" colspan="9" background="http://i3.sinaimg.cn/pfp/ask/images/zhishi/line_g.gif"><img src="http://i3.sinaimg.cn/pfp/ask/images/zhishi/line_g.gif" border="0"></td></tr>
+			<tr><td colspan="9" height="45" class="lh15"><span class="f10 c9">·</span>新浪会员请直接登录<br><span class="f10 c9">·</span><a href="http://iask.sina.com.cn/register/register.php" target="_blank">快速注册</a>，<b style="color:#f90;">获赠20积分</b></td></tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="5" colspan="9"><img src="http://i0.sinaimg.cn/pfp/ask/images/zhishi/login_btm.gif" border="0"></td>
+	</tr>
+</form>
+</table>
+
+
+		<div align="center" style="padding-top:10px; padding-bottom:13px;"><a href="/upload/index.php?classid=1908&url=/f/35504042.html"><img id="newImag" src="http://i0.sinaimg.cn/pfp/ishare/gx_wysc1.gif" width="173" height="45" border="0" alt="我要上传资料"></a></div>
+<div style="margin:0 auto;width:190px;">
+
+<script>
+try{document.domain='sina.com'}catch(e){};(function(b, c) {
+    function g() {
+        var a = b.getElementById("cont-tanx-a-" + h);
+        if (5 < i && ("undefined" === typeof c.tanxssp_show)) {
+            try {
+                a.removeChild(b.getElementById("tanx-a-" + h))
+            } catch (d) {}
+            a.innerHTML = j
+        } else "undefined" !== typeof c.tanx_ssp_onload || (i++, setTimeout(g, 100))
+    }
+    var a = b.createElement("script"),
+        d = b.getElementsByTagName("head")[0],
+        j = "\x3Ca href\x3D\x27http\x3A\x2F\x2Fredirect.simba.taobao.com\x2Frd\x3Fc\x3Dun\x26w\x3Dchannel\x26f\x3Dhttp\x253A\x252F\x252Fwww.taobao.com\x252Fgo\x252Fact\x252Fmmbd\x252Fpdnew.php\x253Fpid\x253Dmm\x5F15890324\x5F2192376\x5F8664351\x2526unid\x253D\x26k\x3D30375390a8b21737\x26p\x3Dmm\x5F15890324\x5F2192376\x5F8664351\x27 target\x3D\x5Fblank\x3E\x3Cimg src\x3D\x27http\x3A\x2F\x2Fd1.sina.com.cn\x2Flitong\x2Fduanran\x2F190x300.jpg\x27 border\x3D0 \x2F\x3E\x3C\x2Fa\x3E",
+        i = 0,
+        h = "mm_15890324_2192376_8664351";
+    b.write("<span id='cont-tanx-a-" + h + "'><a style='display:none;' id='tanx-a-" + h + "'></a></span>");
+    c.tanxssp_show || (a.src = "http://p.tanx.com/ex?i=" + h, d.insertBefore(a, d.firstChild));
+    setTimeout(g, 3E3)
+})(document, window);
+</script>
+
+<script src="http://a.alimama.cn/inf.js" type="text/javascript"> 
+
+</script>
+
+</div>
+
+<!--down-part-->
+
+
+<style type="text/css">
+
+.f12_after tr td{border-bottom:1px solid #f7f7f7; margin:0px; padding:5px 0px;}
+
+.f12_after tr .f12_after1 a{color:#00007F; text-decoration:none; }
+
+.f12_after tr .f12_after1 a:hover{color:#ff0000; text-decoration:none;}
+
+.f12_after tr td img{margin:0px 5px;}
+
+.f12_after2 tr td{padding:5px 5px}
+
+</style>
+
+<div id="ishare_link">
+
+<div style="background-color: rgb(255, 255, 255); margin-top: 10px;word-wrap:break-word;">
+
+<div  align=center style="border: 1px solid rgb(215, 220, 210); background-color: rgb(242, 246, 237); line-height: 22px;"><b>正在被下载的资料</b></div>
+
+<table cellspacing="0" cellpadding="3" border="0" align="center" width="90%" class="f12 f12_after"><tr><td height="5"></td></tr>
+
+
+
+<tr><td align="left">            			<img width="16" height="14" align="absmiddle" alt="" src="http://i0.sinaimg.cn/pfp/ask/images/rar.gif"/></td>
+
+<td nowrap="nowrap"><p class="wyhxh">            			<a class="a05" target="_blank" href="/f/25168321.html?from=dl" title="MODI_OCR_CHN.rar">MODI_OCR_CHN.rar</a></p></td></tr>
+
+
+
+
+<tr><td align="left">            			<img width="16" height="14" align="absmiddle" alt="" src="http://i0.sinaimg.cn/pfp/ask/images/pdf.gif"/></td>
+
+<td nowrap="nowrap"><p class="wyhxh">            			<a class="a05" target="_blank" href="/f/37562210.html?from=dl" title="课程与教学的基本原理.pdf">课程与教学的基本原理.p..</a></p></td></tr>
+
+
+
+
+<tr><td align="left">            			<img width="16" height="14" align="absmiddle" alt="" src="http://i0.sinaimg.cn/pfp/ask/images/pdf.gif"/></td>
+
+<td nowrap="nowrap"><p class="wyhxh">            			<a class="a05" target="_blank" href="/f/35621977.html?from=dl" title="12J609 防火门窗.pdf">12J609 防火门窗.pdf</a></p></td></tr>
+
+
+
+
+<tr><td align="left">            			<img width="16" height="14" align="absmiddle" alt="" src="http://i0.sinaimg.cn/pfp/ask/images/pdf.gif"/></td>
+
+<td nowrap="nowrap"><p class="wyhxh">            			<a class="a05" target="_blank" href="/f/19364889.html?from=dl" title="血清胆碱酯酶在肝移植前后的改变.pdf">血清胆碱酯酶在肝移植前..</a></p></td></tr>
+
+
+
+
+<tr><td align="left">            			<img width="16" height="14" align="absmiddle" alt="" src="http://i0.sinaimg.cn/pfp/ask/images/ppt.gif"/></td>
+
+<td nowrap="nowrap"><p class="wyhxh">            			<a class="a05" target="_blank" href="/f/35503606.html?from=dl" title="第六章 开美丽的花，结结实的果——大学生恋爱与性心...">第六章 开美丽的花，结..</a></p></td></tr>
+
+
+
+<tr><td align="right" class="f12_after1" colspan="2"><a href="/random/" target="_blank">更多&raquo;</a></td>
+
+</tr></table></div>
+
+        </div>
+
+<!--down-part end-->
+
+
+<!-- hot start -->
+
+<style>
+.top td{border-bottom:1px dashed #cae8ae;padding:0px 5px;line-height:28px;text-align:left;}
+</style>
+<div style="background-color:#fff; margin-top:10px; border:1px solid #d7dcd2;word-wrap:break-word;">
+<div align="center" style="border:1px solid #d7dcd2; background-color:#f2f6ed; line-height:22px;"><b>本分类热门资料</b></div>
+<table border="0" width="100%" cellspacing="0" class="top f13">
+        <tr><td>01 <a href="/f/7356580.html?from=top" target=_blank title="C++.Primer.Plus.第五版.中文版.pdf" >C++.Primer.Plus.第五..</a></td></tr>
+        <tr><td>02 <a href="/f/9835700.html?from=top" target=_blank title="楷体_GB2312、仿宋_GB2312字体（ttf文件）.rar" >楷体_GB2312、仿宋_GB..</a></td></tr>
+        <tr><td>03 <a href="/f/12687239.html?from=top" target=_blank title="钢筋符号字体STQY.rar" >钢筋符号字体STQY.rar</a></td></tr>
+        <tr><td>04 <a href="/f/37529188.html?from=top" target=_blank title="excel自动写、保存、关闭.rar" >excel自动写、保存、..</a></td></tr>
+        <tr><td>05 <a href="/f/14197647.html?from=top" target=_blank title=".NET Reflector 7.0.0.420 注册破解版" >.NET Reflector 7.0.0..</a></td></tr>
+        <tr><td>06 <a href="/f/13433633.html?from=top" target=_blank title="spring.jar" >spring.jar</a></td></tr>
+        <tr><td>07 <a href="/f/4870972.html?from=top" target=_blank title="Html中文手册" >Html中文手册</a></td></tr>
+        <tr><td>08 <a href="/f/13433461.html?from=top" target=_blank title="jstl.jar" >jstl.jar</a></td></tr>
+        <tr><td>09 <a href="/f/34021135.html?from=top" target=_blank title="网页前台模板十个.zip" >网页前台模板十个.zip</a></td></tr>
+        <tr><td>10 <a href="/f/13047047.html?from=top" target=_blank title="最常用10种shx字体CAD设计打包下载.rar" >最常用10种shx字体CAD..</a></td></tr>
+<tr><td style="text-align:right"><a href="/topuser/tophot.php?classid=1908" target="_blank" class="a05">更多热门资料&raquo;</a></td></tr> 
+</table>
+</div>
+
+
+<!-- hot end -->
+
+<div class="f12_after f12_after2">
+
+
+</div>
+
+<div id="AdPublican1" class="div0520" style="display:block"></div>
+
+</div>
+
+<style type="text/css"> 
+
+.div0520 ul{ border:#ebebeb solid 1px; padding:0px 5px;margin:0;}
+
+.div0520 li{ line-height:30px; background:url(http://i3.sinaimg.cn/pfp/i/z3/li2bg.gif) no-repeat left center; padding-left:10px;color:#000;list-style:block;}
+
+.div0520 li a{color:#000!important;}
+
+.div0520 li a:hover{color:#f00!important;}
+
+.div0520 p{margin:0;padding:0;}	
+
+</style>
+
+		</div>
+
+        <div class="wrap_clear"></div>
+
+</div>
+
+</div>
+
+<br>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" class="f12">
+
+    <tr>
+
+      <td height=1 bgcolor=#c8c7c7></td>
+
+    </tr>
+
+	<tr>
+
+		<td align="center" class="ar1">
+
+		<br>
+
+		<a href="http://www.sina.com.cn/intro/copyright.shtml" target="_blank"><font color="#666666">&copy; 2012</font></a>&nbsp;Sina.com&nbsp;<a href="http://iask.sina.com.cn/help/mzsm.html" target="_blank"><font color="#666666">免责声明</font></a>　<a href="/help/guest_ishare.html" target="_blank">意见反馈</a>　<a href="/help/rhxzzl.html" target="_blank">使用帮助</a><br>
+
+		<br><br>
+
+		</td>
+
+	</tr>
+
+</table>
+
+<script src="http://keyword.sina.com.cn/iask/ishare_nominate.js" type="text/javascript"></script>
+
+<!-- zhitouads -->
+
+<script>
+
+var advnum = 3;
+
+var catid = "5380";
+
+var advpos = "zhitouads1";
+
+var advitemname = "advitem"; 
+
+</script>
+
+<script type="text/javascript" src="http://pfpip.sina.com.cn/ip.js"></script>
+
+<script type="text/javascript" src="http://pfp.sina.com.cn/js/iask/adv.js"></script>
+
+<!-- zhitouads -->
+
+<!--0520广告-->
+
+<script type="text/javascript"> 
+
+	window.$config = {};
+
+	window.$config.ads = new Array();
+
+	window.$config.ads.push("AdPublican1");
+
+	window.$config.maxAdLinks = 5;
+
+	window.$config.styles = {};
+
+	window.$config.styles["AdPublican1"] = ({"div_id":"AdPublican1","Classname_div":"div0520","Classname_a":"","Classname_p":""});
+
+	//广告代码回调函数
+
+	function SinaDotGetAdInfoFunc()
+
+	{
+
+		return window.$config;
+
+	}
+
+</script>
+
+<!--0520广告-->
+
+<script type="text/javascript" src="http://d1.sina.com.cn/shh/sinadot_intext/demo/iask/loadAd.js" charset="gb2312"></script>
+
+<!-- START Nielsen//NetRatings SiteCensus V5.2 -->
+
+<!-- COPYRIGHT 2006 Nielsen//NetRatings -->
+
+<script type="text/javascript"> 
+
+	var _rsCI="cn-sina2006";	 
+
+	var _rsCG="0";	
+
+	var _rsDN="//secure-cn.imrworldwide.com/";	
+
+	var _rsCC=0;	
+
+	var _rsSE=1;	
+
+	var _rsSM=0.01;	 
+
+	var _rsSS=1500;	 
+
+</script>
+
+<script type="text/javascript" src="//secure-cn.imrworldwide.com/v52.js"></script>
+
+<noscript>
+
+	<img src="//secure-cn.imrworldwide.com/cgi-bin/m?ci=cn-sina2006&amp;cg=0" alt=""/>
+
+</noscript>
+
+<!-- END Nielsen//NetRatings SiteCensus V5.2 -->
+
+<!--浮层 start-->
+<style>
+.blackcurtain_class{ filter: alpha(opacity=70);-moz-opacity: 0.6;opacity: 0.6;background:#000;  position:absolute; top:0px; left:0px; color:#fff; z-index:10000; width:100%; height:100%; display:none;}
+</style>
+<div class="share_layer regist_success_tips save_ok" style='position:absolute;display:none;' classtag="share_layer_commontag">
+	<div class="bg">
+		<div class="content">
+            <div class="title">一键上传至云端，欢迎体验~<a href="javascript:void(0);" class="close share_layer_close">关闭</a></div>
+            <div class="detail">
+                <p class="save_ok_txt"><span class="pic_ok"></span>您的文件已经成功保存到微盘</p>
+            </div>
+            <div class="save_ok_btn_wrap"><a href="http://vdisk.weibo.com/file/list" class="vd_save_btn" target="_blank"><span>去微盘看看</span></a></div>
+        </div>
+    </div>
+</div>
+<div class="share_layer save_fail regist" style="top:550px;left:300px;position:absolute;display:none;" classtag="share_layer_commontag">
+	<div class="bg">
+		<div class="content">
+            <div class="title">一键上传至云端，欢迎体验~<a href="javascript:void(0);" class="close share_layer_close">关闭</a></div>
+            <div class="detail">
+                <p class="save_fail_txt"><span class="pic_fail"></span>保存失败，请确认是否成功注册微盘</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="share_layer save_fail login" style="top:550px;left:300px;position:absolute;display:none;" classtag="share_layer_commontag">
+	<div class="bg">
+		<div class="content">
+            <div class="title">一键上传至云端，欢迎体验~<a href="javascript:void(0);" class="close share_layer_close">关闭</a></div>
+            <div class="detail">
+                <p class="save_fail_txt"><span class="pic_fail"></span>保存失败，请确认是否成功登录微盘</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="share_layer save_fail vip" style="top:550px;left:300px;position:absolute;display:none;" classtag="share_layer_commontag">
+	<div class="bg">
+		<div class="content">
+            <div class="title">一键上传至云端，欢迎体验~<a href="javascript:void(0);" class="close share_layer_close">关闭</a></div>
+            <div class="detail">
+                <p class="save_fail_txt"><span class="pic_fail"></span>保存失败，请确认是否成功开通微盘</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="share_layer save_fail fin" style="top:550px;left:300px;position:absolute;display:none;" classtag="share_layer_commontag">
+	<div class="bg">
+		<div class="content">
+            <div class="title">一键上传至云端，欢迎体验~<a href="javascript:void(0);" class="close share_layer_close">关闭</a></div>
+            <div class="detail">
+                <p class="save_fail_txt"><span class="pic_fail"></span>保存失败，您可直接下载或保存其它文档。</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="share_layer save_open share_layer01 open_tips" style="top:750px;left:300px;position:absolute;display:none;" classtag="share_layer_commontag">
+	<div class="bg">
+		<div class="content">
+            <div class="title">请在新开窗口完成微盘开通<a href="javascript:void(0);" class="close share_layer_close">关闭</a></div>
+            <div class="detail clearfix">
+                <div class="detail_part detail_part_l"><p>如果您顺利完成开通</p><div class="save_open_btn_wrap"><a href="javascript:void(0);" class="vd_save_btn save_to_vd save_vip"><span>保存到微盘</span></a></div></div>
+                <div class="detail_part detail_part_r"><p>如果您开通遇到问题</p><div class="save_open_btn_wrap"><a href="http://vdisk.weibo.com/help" class="vd_save_btn help_btn" target="_blank"><span>帮助中心</span></a></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="share_layer save_open share_layer01 regist_success regist" style="top:750px;left:300px;position:absolute;display:none;" classtag="share_layer_commontag">
+    <div class="bg">
+        <div class="content">
+            <div class="title">请在新开窗口完成微盘注册<a href="javascript:void(0);" class="close share_layer_close">关闭</a></div>
+            <div class="detail clearfix">
+                <div class="detail_part detail_part_l"><p>如果您顺利完成注册</p><div class="save_open_btn_wrap"><a href="javascript:void(0);" class="vd_save_btn save_to_vd save_reg"><span>保存到微盘</span></a></div></div>
+                <div class="detail_part detail_part_r"><p>如果您注册遇到问题</p><div class="save_open_btn_wrap"><a href="http://vdisk.weibo.com/help" class="vd_save_btn help_btn" target="_blank"><span>帮助中心</span></a></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="share_layer save_open share_layer01 regist_success login" style="top:750px;left:300px;position:absolute;display:none;" classtag="share_layer_commontag">
+    <div class="bg">
+        <div class="content">
+            <div class="title">请在新开窗口完成登录<a href="javascript:void(0);" class="close share_layer_close">关闭</a></div>
+            <div class="detail clearfix">
+                <div class="detail_part detail_part_l"><p>如果您顺利完成登录</p><div class="save_open_btn_wrap"><a href="javascript:void(0);" class="vd_save_btn save_to_vd save_login"><span>保存到微盘</span></a></div></div>
+                <div class="detail_part detail_part_r"><p>如果您登录遇到问题</p><div class="save_open_btn_wrap"><a href="http://vdisk.weibo.com/help" class="vd_save_btn help_btn" target="_blank"><span>帮助中心</span></a></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="share_layer save_open_vd share_layer02 open_wb" style="top:1300px;left:300px;position:absolute;display:none;" classtag="share_layer_commontag">
+	<div class="bg">
+		<div class="content">
+            <div class="title">一键上传至云端，欢迎体验~<a href="javascript:void(0);" class="close share_layer_close">关闭</a></div>
+            <div class="detail">
+                <p class="open_vd_login">已有微博账号? <a classtag="loging" href="http://weibo.com/logout.php?backurl=http://weibo.com/login.php?entry=weipan" target="_blank">马上登录</a></p>
+                <div class="open_vd_txt"><span class="info_pic"></span><div class="info_text"><p>亲爱的<span id='username'></span>，</p><p>您的账号还未开通微盘，现在就去开通吧~</p></div></div>
+            </div>
+            <div class="open_btn_wrap"><a href="http://vdisk.weibo.com/sign" class="vd_save_btn open_btn" target="_blank"><span>一分钟快速开通</span></a></div>
+        </div>
+    </div>
+</div>
+<div class="share_layer save_open_vd share_layer02 regist_wb" style="top:1600px;left:300px; position:absolute;display:none;" classtag="share_layer_commontag">
+	<div class="bg">
+		<div class="content">
+            <div class="title">一键上传至云端，欢迎体验~<a href="javascript:void(0);" class="close share_layer_close">关闭</a></div>
+            <div class="detail">
+                <p class="open_vd_login">已有微博账号? <a classtag="loging" href="http://weibo.com/logout.php?backurl=http://weibo.com/login.php?entry=weipan" target="_blank">马上登录</a></p>
+                <ul class="open_vd_box">
+                    <li class="clearfix open_list_save"><span class="pic_save"></span><div class="open_list_txt"><p>安全存储</p><p class="gray">存储文件，安全永不丢失</p></div></li>
+                    <li class="clearfix"><span class="pic_share"></span><div class="open_list_txt"><p>分享发现</p><p class="gray">分享到微博，发现更多精彩文件</p></div></li>
+                    <li class="clearfix"><span class="pic_syn"></span><div class="open_list_txt"><p>多终端同步</p><p class="gray">实现PC、苹果、笔记本、手机多端访问</p></div></li>
+                </ul>
+            </div>
+            <div class="open_btn_wrap01"><a href="http://vdisk.weibo.com/reg" class="vd_save_btn regist_wb_btn" target="_blank"><span>注册微盘</span></a></div>
+        </div>
+    </div>
+</div>
+<div id="blackcurtain" class="blackcurtain_class"></div>
+<!--浮层 end-->
+
+<!-- SUDA START-->
+<script type="text/javascript" src="http://i1.sinaimg.cn/unipro/pub/suda_m_v629.js"></script>
+<script type="text/javascript">suds_init(2578,10.0000,1015,2);</script>
+<!-- SUDA END-->
+
+</body>
+
+</html>
+
+<script language="javascript" src="/js/adstat.js"></script>
+
